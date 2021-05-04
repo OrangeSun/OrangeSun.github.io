@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>OrangeSun PC</title>
+    <link rel="shortcut icon" href="D:\Draws\housamo\@tasakikiki.ico" type="image/x-icon" />
+    <link rel="icon" href="D:\Draws\housamo\@tasakikiki.ico" type="image/x-icon" />
+    <!-- 以下是复制粘贴 -->
+    <style type="text/css">
+        p{padding-left:0.4em;}
+        form{margin-left:7px;}
+        .suggest-container {
+            border: 2px solid #333333;
+            visibility: hidden;
+            opacity:0.9;
+        }
+        .suggest-item {
+            background-color:#FFFFFF;
+            padding: 5px 5px;
+        }
+        .suggest-active {
+            background: #33CCFF;
+            color: white;
+            padding: 3px 2px;
+        }
+    </style>
+    <script type="text/javascript" src="inputSuggest_0.1.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var sinaSuggest = new InputSuggest({
+                input: document.getElementById('baidu'),
+                data: ['', 'site:tieba.baidu.com', 'site:zhihu.com', 'site:bilibili.com']
+            });
+            var sohuSuggest = new InputSuggest({
+                width: 300,
+                opacity: 0.3,
+                input: document.getElementById('sohu'),
+                data: ['sohu.com', 'sogou.com', 'chinaren.com', 'vip.sohu.com', 'sohu.net', '2008.sohu.com', 'sms.sohu.com']
+            });
+        }
+    </script>
+    <!-- 以上是复制粘贴 -->
+</head>
+<body background="D:\Download\image\studybg.jpg">
+    <h1>Welcome / 欢迎页</h1>
+    <p>Version:0.2.0505a</p>
+
+    <h3>to Search / 搜索</h3>
+    <form name="search1" action="https://www.baidu.com/s" target="_blank" >
+        baidu.com（百度） : <input type="text" name="wd" autocomplete="off" id="baidu" placeholder="请在此搜索（百度）" style="width:400px; height:40px; font-size:25px; padding:4px 7px 2px 8px; " />
+        <input type="submit" value="Enter" style="width:60px; height:35px; font-size:15px;" />
+    </form>
+    <p>贴吧后缀：site:tieba.baidu.com ；知乎后缀：site:zhihu.com ； B站后缀： site:bilibili.com</p>
+    <form name="search4" action="https://www.zhihu.com/search" target="_blank" accept-charset="UTF-8">
+        zhihu.com（知乎） : <input type="text" name="q" autocomplete="off" placeholder="请在此搜索（知乎）" style="width:400px; height:40px; font-size:25px; padding:4px 7px 2px 8px; "/>
+        <input type="submit" value="Enter" style="width:60px; height:35px; font-size:15px;" />
+    </form>
+
+    <h3>Working / 正经的事：</h3>
+    <p><a href="study.html">the Study List / 学习的事</a></p>
+
+    <h3>Taking a Rest / 休息时间：</h3>
+    <p><a href="https://www.rt.com" target="_blank">Russia Today / 今日俄罗斯（新闻）</a></p>
+    <p><a href="https://space.bilibili.com/430791072/favlist?fid=798439972&ftype=create " target="_blank">Bilibili Favorite List / B站</a></p>
+    <p>美剧：
+        <a href="https://www.bilibili.com/video/BV1RE411C7t5" target="_blank">F R I E N D S / 老友记（英语休闲练习）</a>  ;
+        <a href="https://www.bilibili.com/video/BV1oe411x7X1" target="_blank">You Rang, M'Lord? / 主仆轶事（看大美女）</a>
+    </p>
+    <p><a href="https://tieba.baidu.com" target="_blank">tieba / 百度贴吧</a></p>
+    <img src="D:\Draws\0503a.jpg" width="1242" height="808" />
+    <p>-- OrangeSun Personnel Computer （D:/EasyModeCode/Easy%20Mode.html）</p>
+</body>
+
+
+</html>
